@@ -12,8 +12,8 @@ function hideriver_alltab_initialize(){
 	elgg_unregister_page_handler('activity');
 	elgg_register_page_handler('activity', 'activity_hide_alltab_river');
 
-    $blog = new ElggMenuItem('blog', elgg_echo('blog:blogs'), 'blog/all');
-    $file = new ElggMenuItem('file', elgg_echo('file'), 'file/all');
+        $blog = new ElggMenuItem('blog', elgg_echo('blog:blogs'), 'blog/all');
+        $file = new ElggMenuItem('file', elgg_echo('file'), 'file/all');
 	$wire = new ElggMenuItem('thewire', elgg_echo('thewire'), 'thewire/all');
 	elgg_register_menu_item('site', $wite)
 	elgg_register_menu_item('site', $blog);
