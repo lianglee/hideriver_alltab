@@ -15,8 +15,8 @@ function hideriver_alltab_initialize(){
         $blog = new ElggMenuItem('blog', elgg_echo('blog:blogs'), 'blog/all');
         $file = new ElggMenuItem('file', elgg_echo('file'), 'file/all');
 	$wire = new ElggMenuItem('thewire', elgg_echo('thewire'), 'thewire/all');
-	elgg_register_menu_item('site', $wire);
-	elgg_register_menu_item('site', $blog);
+	elgg_unregister_menu_item('site', $wire);
+	elgg_unregister_menu_item('site', $blog);
 	elgg_unregister_menu_item('site', $file);
 	elgg_unregister_menu_item('site', array(
 		'name' => 'bookmarks',
